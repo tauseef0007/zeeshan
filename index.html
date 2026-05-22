@@ -14,89 +14,66 @@
 
     body {
       font-family: 'Poppins', sans-serif;
-      background: linear-gradient(135deg, #fff7ed, #ffe4e6, #eef2ff);
-      color: #1f2937;
-      padding: 30px;
+      background: #f1f5f9;
+      color: #1e293b;
+      padding: 25px;
       min-height: 100vh;
     }
 
     .container {
-      max-width: 1200px;
+      max-width: 1150px;
       margin: auto;
-      background: rgba(255,255,255,0.95);
-      border-radius: 30px;
+      background: #ffffff;
+      border-radius: 18px;
       overflow: hidden;
-      box-shadow: 0 25px 60px rgba(0, 0, 0, 0.18);
-      border: 4px solid rgba(255,255,255,0.5);
-      backdrop-filter: blur(12px);
+      box-shadow: 0 10px 35px rgba(15, 23, 42, 0.08);
+      border: 1px solid #e2e8f0;
     }
 
     .header {
-      background: linear-gradient(135deg, #7c3aed, #ec4899, #f97316);
-      color: white;
-      padding: 60px 40px;
+      background: #ffffff;
+      color: #0f172a;
+      padding: 55px 40px 35px;
       text-align: center;
-      position: relative;
-      overflow: hidden;
+      border-bottom: 1px solid #e2e8f0;
     }
 
-    .header::before {
-      content: '';
-      position: absolute;
-      width: 300px;
-      height: 300px;
-      background: rgba(255,255,255,0.08);
-      border-radius: 50%;
-      top: -100px;
-      right: -50px;
-    }
-
+    .header::before,
     .header::after {
-      content: '';
-      position: absolute;
-      width: 250px;
-      height: 250px;
-      background: rgba(255,255,255,0.08);
-      border-radius: 50%;
-      bottom: -100px;
-      left: -50px;
+      display: none;
     }
 
     .header h1 {
-      font-size: 52px;
-      margin-bottom: 12px;
+      font-size: 44px;
+      margin-bottom: 10px;
       font-weight: 700;
-      position: relative;
-      z-index: 2;
+      letter-spacing: 0.5px;
     }
 
     .header p {
-      font-size: 20px;
-      opacity: 0.95;
-      position: relative;
-      z-index: 2;
+      font-size: 18px;
+      color: #64748b;
+      margin-bottom: 14px;
     }
 
     .tagline {
-      margin-top: 20px;
-      font-size: 16px;
+      margin-top: 10px;
+      font-size: 15px;
       font-style: italic;
-      color: #fdf2f8;
-      max-width: 850px;
+      color: #64748b;
+      max-width: 800px;
       margin-inline: auto;
       line-height: 1.8;
-      position: relative;
-      z-index: 2;
     }
 
     .content {
       display: grid;
-      grid-template-columns: 360px 1fr;
+      grid-template-columns: 320px 1fr;
     }
 
     .left {
-      background: linear-gradient(180deg, #312e81, #581c87);
-      padding: 40px 28px;
+      background: #0f172a;
+      padding: 35px 25px;
       color: white;
     }
 
@@ -106,30 +83,29 @@
     }
 
     .profile-box img {
-      width: 210px;
-      height: 210px;
-      border-radius: 30px;
+      width: 200px;
+      height: 220px;
+      border-radius: 16px;
       object-fit: cover;
-      border: 8px solid rgba(255,255,255,0.4);
-      margin-bottom: 15px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+      border: 4px solid rgba(255,255,255,0.15);
+      box-shadow: 0 8px 25px rgba(0,0,0,0.35);
     }
 
     .profile-placeholder {
-      width: 210px;
-      height: 210px;
+      width: 200px;
+      height: 220px;
       margin: auto;
-      border-radius: 30px;
-      background: linear-gradient(135deg, #f97316, #ec4899);
+      border-radius: 16px;
+      background: #1e293b;
       display: flex;
       align-items: center;
       justify-content: center;
-      color: white;
-      font-size: 18px;
-      font-weight: 600;
-      border: 6px solid rgba(255,255,255,0.3);
-      margin-bottom: 15px;
+      color: #cbd5e1;
+      font-size: 17px;
+      font-weight: 500;
+      border: 2px dashed rgba(255,255,255,0.2);
       overflow: hidden;
+      margin-bottom: 12px;
     }
 
     .profile-placeholder img {
@@ -139,15 +115,13 @@
     }
 
     .section-title {
-      background: linear-gradient(135deg, #f97316, #ec4899);
-      color: white;
-      padding: 14px 20px;
-      border-radius: 14px;
-      font-size: 19px;
-      margin-bottom: 24px;
-      font-weight: 700;
-      letter-spacing: 0.5px;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.18);
+      background: #ffffff;
+      color: #0f172a;
+      padding: 14px 18px;
+      border-radius: 10px;
+      font-size: 18px;
+      margin-bottom: 22px;
+      font-weight: 600;
     }
 
     .info-list {
@@ -155,162 +129,149 @@
     }
 
     .info-list li {
-      margin-bottom: 18px;
+      margin-bottom: 14px;
       line-height: 1.7;
       font-size: 14px;
-      background: rgba(255,255,255,0.08);
+      background: rgba(255,255,255,0.06);
       padding: 14px;
-      border-radius: 14px;
-      border: 1px solid rgba(255,255,255,0.08);
-      backdrop-filter: blur(8px);
+      border-radius: 10px;
     }
 
     .info-list strong {
       display: block;
-      color: #fbbf24;
+      color: #f8fafc;
       margin-bottom: 4px;
-      font-size: 13px;
+      font-size: 12px;
       text-transform: uppercase;
-      letter-spacing: 0.5px;
+      letter-spacing: 0.8px;
     }
 
     .right {
-      padding: 40px;
-      background: linear-gradient(180deg, #fff7ed, #ffffff);
+      padding: 35px;
+      background: #ffffff;
     }
 
     .card {
-      margin-bottom: 32px;
-      background: white;
-      border-radius: 24px;
-      padding: 30px;
-      box-shadow: 0 12px 35px rgba(0,0,0,0.08);
-      border: 1px solid rgba(236,72,153,0.12);
-      position: relative;
-      overflow: hidden;
+      margin-bottom: 28px;
+      background: #ffffff;
+      border-radius: 14px;
+      padding: 28px;
+      box-shadow: 0 4px 18px rgba(15,23,42,0.05);
+      border: 1px solid #e2e8f0;
     }
 
     .card::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 8px;
-      background: linear-gradient(90deg, #7c3aed, #ec4899, #f97316);
+      display: none;
     }
 
     .card h2 {
-      color: #7c3aed;
+      color: #0f172a;
       margin-bottom: 22px;
-      font-size: 28px;
+      font-size: 25px;
       font-weight: 700;
+      border-bottom: 2px solid #f1f5f9;
+      padding-bottom: 12px;
     }
 
     .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 18px;
     }
 
     .item {
-      background: linear-gradient(135deg, #faf5ff, #fff1f2);
+      background: #f8fafc;
       padding: 18px;
-      border-radius: 18px;
-      border: 1px solid rgba(236,72,153,0.12);
+      border-radius: 12px;
+      border: 1px solid #e2e8f0;
       transition: 0.3s;
     }
 
     .item:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+      transform: translateY(-2px);
     }
 
     .item h4 {
-      color: #ec4899;
-      margin-bottom: 10px;
+      color: #334155;
+      margin-bottom: 8px;
       font-size: 15px;
     }
 
     .item p {
       font-size: 14px;
       line-height: 1.7;
+      color: #475569;
     }
 
     table {
       width: 100%;
       border-collapse: collapse;
       margin-top: 10px;
+      border-radius: 12px;
       overflow: hidden;
-      border-radius: 18px;
     }
 
     table th {
-      background: linear-gradient(135deg, #7c3aed, #ec4899);
+      background: #0f172a;
       color: white;
-      padding: 16px;
+      padding: 15px;
       text-align: left;
       font-size: 14px;
     }
 
     table td {
-      padding: 16px;
-      border-bottom: 1px solid #f3e8ff;
+      padding: 15px;
+      border-bottom: 1px solid #e2e8f0;
       font-size: 14px;
+      color: #334155;
     }
 
     table tr:nth-child(even) {
-      background: #fdf4ff;
-    }
-
-    table tr:hover {
-      background: #fff1f2;
+      background: #f8fafc;
     }
 
     .quote {
-      margin-top: 24px;
+      margin-top: 22px;
       text-align: center;
       font-style: italic;
-      color: #6b21a8;
-      background: linear-gradient(135deg, #f3e8ff, #fce7f3);
-      padding: 24px;
-      border-radius: 18px;
-      line-height: 1.9;
-      font-size: 15px;
-      border: 1px solid rgba(236,72,153,0.18);
+      color: #334155;
+      background: #f8fafc;
+      padding: 22px;
+      border-radius: 12px;
+      line-height: 1.8;
+      border: 1px solid #e2e8f0;
     }
 
     .footer {
-      background: linear-gradient(135deg, #111827, #312e81);
-      color: white;
+      background: #0f172a;
+      color: #cbd5e1;
       text-align: center;
-      padding: 28px;
-      font-size: 14px;
+      padding: 24px;
+      font-size: 13px;
       letter-spacing: 0.5px;
     }
 
     .btn-group {
       text-align: center;
-      margin: 30px 0;
+      margin: 24px 0;
     }
 
     .btn {
-      background: linear-gradient(135deg, #7c3aed, #ec4899);
+      background: #0f172a;
       color: white;
       border: none;
-      padding: 15px 30px;
-      border-radius: 14px;
-      font-size: 15px;
+      padding: 14px 26px;
+      border-radius: 10px;
+      font-size: 14px;
       cursor: pointer;
       margin: 10px;
       transition: 0.3s;
       font-weight: 600;
-      box-shadow: 0 10px 25px rgba(124,58,237,0.3);
     }
 
     .btn:hover {
-      transform: translateY(-3px) scale(1.02);
-      box-shadow: 0 15px 30px rgba(236,72,153,0.35);
+      background: #1e293b;
+      transform: translateY(-2px);
     }
 
     .editable {
@@ -318,20 +279,133 @@
     }
 
     @media(max-width: 900px) {
+      body {
+        padding: 12px;
+      }
+
+      .container {
+        border-radius: 16px;
+      }
+
       .content {
         grid-template-columns: 1fr;
       }
 
       .left {
-        border-right: none;
-      }
-
-      .header h1 {
-        font-size: 36px;
+        padding: 25px 18px;
       }
 
       .right {
-        padding: 25px;
+        padding: 20px;
+      }
+
+      .header {
+        padding: 35px 20px;
+      }
+
+      .header h1 {
+        font-size: 32px;
+        line-height: 1.3;
+      }
+
+      .header p {
+        font-size: 16px;
+      }
+
+      .tagline {
+        font-size: 13px;
+        line-height: 1.7;
+      }
+
+      .profile-placeholder,
+      .profile-box img {
+        width: 170px;
+        height: 170px;
+        border-radius: 20px;
+      }
+
+      .section-title {
+        font-size: 17px;
+        padding: 12px 16px;
+      }
+
+      .card {
+        padding: 20px;
+        border-radius: 18px;
+        margin-bottom: 22px;
+      }
+
+      .card h2 {
+        font-size: 22px;
+      }
+
+      .grid {
+        grid-template-columns: 1fr;
+      }
+
+      .item {
+        padding: 16px;
+      }
+
+      table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+      }
+
+      table th,
+      table td {
+        padding: 12px;
+        font-size: 12px;
+      }
+
+      .btn {
+        width: 100%;
+        margin: 8px 0;
+      }
+
+      .footer {
+        font-size: 12px;
+        padding: 18px;
+      }
+    }
+
+    @media(max-width: 480px) {
+      body {
+        padding: 8px;
+      }
+
+      .header h1 {
+        font-size: 26px;
+      }
+
+      .header p {
+        font-size: 14px;
+      }
+
+      .tagline {
+        font-size: 12px;
+      }
+
+      .profile-placeholder,
+      .profile-box img {
+        width: 145px;
+        height: 145px;
+      }
+
+      .info-list li {
+        padding: 12px;
+        font-size: 13px;
+      }
+
+      .card h2 {
+        font-size: 20px;
+      }
+
+      .item p,
+      table td,
+      table th {
+        font-size: 12px;
       }
     }
 
@@ -375,9 +449,9 @@
 
         <div class="profile-box">
           <div class="profile-placeholder editable">
-            <img src="zeeshan.jpg" alt="Profile Photo">
+            Add Photo Here
           </div>
-          <p style="font-size:13px;color:#6b7280;"></p>
+          <p style="font-size:13px;color:#6b7280;">You can replace this with groom photo</p>
         </div>
 
         <div class="section-title">Personal Information</div>
@@ -517,7 +591,7 @@
     </div>
 
     <div class="footer editable">
-      Designed By T4us33f
+      Modern Premium Matrimony Biodata • Luxury UI • PDF Ready
     </div>
   </div>
 
